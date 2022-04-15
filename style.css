@@ -7,7 +7,7 @@ html {
     width: 100%;
     min-height: 100vh;
     overflow: auto;
-    background-color: blue;
+    background-color: rgb(226, 225, 148);
     font-family: Exo, sans-serif;
 }
 
