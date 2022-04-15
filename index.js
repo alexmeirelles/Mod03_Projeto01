@@ -64,6 +64,18 @@ app.get('/paletas/find-paletas/:id', (req, res) => {
   res.send(chosenPaleta);
 });
 
+
+/*
+[GET] Leitura de todas as paletas (0,8 pontos);
+[GET] Leitura de paletas individuais (por ID) (0,8 pontos).
+[POST] Criação de paletas (0,8 pontos);
+[PUT] Edição de paletas por ID (0,8 pontos);
+[DELETE] Exclusão de paletas por ID (0,8 pontos).
+*/
+
+
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
 });
+
+
