@@ -2,7 +2,7 @@ const baseURL = "http://localhost:3000/paletas";
 const msgAlert = document.querySelector(".msg-alert");
 
 async function findAllPaletas() {
-  const response = await fetch(`${baseURL}/all-paletas`);
+  const response = await fetch(`${baseURL}/find-paletas`);
 
   const paletas = await response.json();
 
@@ -34,17 +34,17 @@ async function findAllPaletas() {
 findAllPaletas();
 
 async function findByIdPaletas() {
-  const id = document.querySelector("#search-input ").value;
+  const id = document.querySelector("#search-input").value;
 
   if (id == "") {
     localStorage.setItem("message", "Digite um ID para pesquisar!");
     localStorage.setItem("type", "danger");
 
-    closeMessageAlert();
+    showMessageAlert();
     return;
   }
 
-  const response = await fetch(`${baseURL}/one-paleta/${id}`);
+  const response = await fetch(`${baseURL}/find-paleta/${id}`);
   const paleta = await response.json();
 
   if (paleta.message != undefined) {
@@ -80,7 +80,7 @@ async function showModal(id = "") {
       "Atualizar uma Paleta";
     document.querySelector("#button-form-modal").innerText = "Atualizar";
 
-    const response = await fetch(`${baseURL}/one-paleta/${id}`);
+    const response = await fetch(`${baseURL}/find-paleta/${id}`);
     const paleta = await response.json();
 
     document.querySelector("#sabor").value = paleta.sabor;

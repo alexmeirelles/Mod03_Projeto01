@@ -21,7 +21,7 @@ const findPaletaByIdController = async (req, res) => {
     return;
   }
 
-  const chosenPaleta = await paletasService.findPaletaByIdService(idParam);
+  const chosenPaleta = await paletasService.findByIdPaletasService(idParam);
 
   if (!chosenPaleta) {
     return res.status(404).send({ message: 'Paleta não encontrada!' });
@@ -60,7 +60,7 @@ const updatePaletaController = async (req, res) => {
     return;
   }
 
-  const chosenPaleta = await paletasService.findPaletaByIdService(idParam);
+  const chosenPaleta = await paletasService.findByIdPaletasService(idParam);
 
   if (!chosenPaleta) {
     return res.status(404).send({ message: 'Paleta não encontrada!' });

@@ -1,7 +1,7 @@
 const Paletas = require('../models/Paleta');
 
 // Service for all paletas
-const findAllPaletasService = async () => {
+const findPaletasService = async () => {
   const allPaletas = await Paletas.find();
   return allPaletas;
 };
@@ -30,7 +30,7 @@ const deletePaletaService = async (idParam) => {
 };
 
 module.exports = {
-  findAllPaletasService,
+  findPaletasService,
   findByIdPaletasService,
   createPaletaService,
   updatePaletaService,
