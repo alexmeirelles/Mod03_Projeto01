@@ -1,11 +1,12 @@
 const paletasService = require('../services/paletas.service');
+const mongoose = require('mongoose');
 
 const findPaletasController = async (req, res) => {
   const allPaletas = await paletasService.findPaletasService();
+  
   if (allPaletas.length == 0) {
     return res.status(404).send({ message: 'Não exitem paletas!' });
   }
-
   res.send(allPaletas);
 };
 
