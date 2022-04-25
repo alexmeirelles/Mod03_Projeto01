@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 * {
   margin: 0;
@@ -80,8 +80,6 @@ html {
   height: 150px;
   width: 315px;
 }
-
-
 
 @media (max-width: 400px) {
   .paleta-card-item,
@@ -195,7 +193,7 @@ html {
   height: 45px;
 }
 
-.logo-title  {
+.logo-title {
   position: absolute;
   left: 55px;
   font-weight: 700;
