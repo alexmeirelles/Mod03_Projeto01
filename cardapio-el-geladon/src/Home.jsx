@@ -1,5 +1,5 @@
 import './Home.css';
-import PaletaLista from './PalestaLista';
+import PaletaLista from './PaletaLista';
 import sacola from "assets/icons/sacola.svg"
 import logo from "assets/images/logo.svg"
 
