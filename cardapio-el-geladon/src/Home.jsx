@@ -1,7 +1,7 @@
 import './Home.css';
 import PaletaLista from './PalestaLista';
 import sacola from "assets/icons/sacola.svg"
-import logo from "assets/logo.svg"
+import logo from "assets/images/logo.svg"
 
 function Home() {
   return (
